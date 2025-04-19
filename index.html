@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Payment jarrOfficialL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di website saya!</h1>
+        <p>Klik gambar di bawah untuk memperbesar foto:</p>
+        
+        <!-- Gambar yang bisa diklik untuk memperbesar -->
+        <div class="image-container">
+            <img id="image" src="qris.jpg" alt="Gambar" class="image" onclick="toggleImageSize()">
+        </div>
+
+        <!-- Tombol WhatsApp di bawah gambar -->
+        <a href="https://wa.me/6285185011474" target="_blank" class="whatsapp-button">
+            Chat Owner
+        </a>
+    </div>
+
+    <script>
+        // Fungsi untuk memperbesar/memperkecil gambar saat diklik
+        function toggleImageSize() {
+            const image = document.getElementById('image');
+            if (image.style.transform === 'scale(1.5)') {
+                image.style.transform = 'scale(1)';
+            } else {
+                image.style.transform = 'scale(1.5)';
+            }
+        }
+    </script>
+</body>
+</html>
