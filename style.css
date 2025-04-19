@@ -1,7 +1,10 @@
 body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -11,12 +14,12 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #fff;  /* Mengubah warna teks agar terlihat jelas di atas background */
 }
 
 p {
     font-size: 18px;
-    color: #555;
+    color: #fff;  /* Sama dengan warna teks agar kontras dengan background */
 }
 
 .image-container {
